@@ -46,6 +46,8 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install dependencies
         run: npm install
+      - name: Install pnpm
+        run: npm install -g pnpm
       - name: Install vitepress
         run: npm add -D markdown-it markdown-it-mathjax3 vitepress
       - name: Build docs:build
